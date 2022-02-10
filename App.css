@@ -1,102 +1,91 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-#topbar {
-  background-color: #5a41ea;
-  height: 52px;
-  width: 100%;
-  border: 0;
-
-}
-
-.App {
-  text-align: center;
-}
-
+/* Page scrolling settings */
 table {
   table-layout:fixed;
   overflow: scroll;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Setting font */
 @font-face{
   font-family: 'Poppins';
   src:url('https://fonts.googleapis.com/css?family=Poppins');
   font-style: normal;
   font-weight: normal;
 }
+
+/* Page wide stuff */
 body {
   background-color: white;
- 
 }
 
-h1{
+/* Purple bar at the top w/ name/sign up/login */
+#topbar {
+  background-color:#5a41ea;
+  height: 52px;
+  width: 100%;
+  border: 0;
+}
+
+/* Site name features */
+#StudyBuddies {
+  /* Color, position, textbox size */
   color: white;
   position: absolute;
   width: 256px;
   height: 45px;
   left: 16px;
   top: -16px;
+  display: flex;
 
+  /* Font and font size */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 45px;
-  
-  display: flex;
-  mix-blend-mode: normal;
-
 }
 
+/* Login button features */
 #login {
+  /* color, textbox size */
   background-color: white;
   border-radius: 20px;
   border: 0;
-  position: absolute;
   width: 74px;
   height: 40px;
+
+  /* position */
+  position: absolute;
   right: 4px;
   top: 6px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
 
+  /* Font, Font size, color */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 37px;
-  /* identical to box height */
-
-
   color: #5a41ea;
-
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 10px;
 }
 
+/* sign up button in top corner features */
 #signupSmall {
+  /* Color, position, size */
   border-radius: 20px;
   border: 2px solid white;
   background-color: #5a41ea;
-
   position: absolute;
   width: 100px;
   height: 40px;
   right: 104px;
   top: 6px;
 
+  /* Font, font size, color */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: bold;
@@ -105,50 +94,48 @@ h1{
   color: white;
 }
 
-
-p {
+/* Slogan features */
+#center {
+  /* Size, position */
   position: absolute;
   /*width: 978px;   This line prevents it from centering and idk why*/
   height: 150px;
   text-align: center;
   top: 130px;
   
-
+  /* Font, font size, color */
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
   line-height: 75px;
-  
   color: #000000;
 
 }
 
+/* Big sign up button in middle features */
 #signupBig {
+  /* Size, position */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 5px 30px;
   position: absolute;
-  /*width: 328px;*/
   height: px;
   text-align: center;
   display: flex;
   top: 410px;
   left:50%;
   transform: translate(-50%, -50%);
-  align-items: center;
   background: #5a41ea;
   border-radius: 60px;
   border: 0;
 
+  /* Font, font size, color */
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 82px;
-/* identical to box height */
-
-
-color: #FFFFFF;
+  color: #FFFFFF;
 }
