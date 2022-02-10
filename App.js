@@ -1,13 +1,17 @@
 import '../src/App.css';
+
 function App() {
+  
   return (
+
     <div className="App">
-      <h1>Study Buddies</h1>
-      <h2>login</h2>
+      <iframe id="topbar"></iframe>
+      <h1 id="StudyBuddies">Study Buddies</h1>
+      <button id="login">Login</button>
+      <button id="signupSmall">Sign up</button>
       <p id="center">We need some kind of tagline here like
           Where students can find study buddies</p>
+      <button id="signupBig">Sign up</button>
     </div>
   );
 }
-
-export default App;
