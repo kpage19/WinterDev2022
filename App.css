@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+#topbar {
+  background-color: #5a41ea;
+  height: 52px;
+  width: 100%;
+  border: 0;
+
+}
+
 .App {
   text-align: center;
 }
@@ -31,13 +39,11 @@ body {
 }
 
 h1{
-  color: #4162EA;
+  color: white;
   position: absolute;
   width: 256px;
   height: 45px;
-  /*left: calc(50% - 256px/2 + 1.5px);*/
   left: 16px;
-  /*top: calc(50% - 45px/2 + 5px);*/
   top: -16px;
 
   font-family: 'Poppins';
@@ -45,32 +51,31 @@ h1{
   font-weight: bold;
   font-size: 30px;
   line-height: 45px;
-  /* identical to box height */
-
+  
   display: flex;
-  /*align-items: center;
-  text-align: center;*/
-
   mix-blend-mode: normal;
 
 }
 
-h2 {
+#login {
+  background-color: white;
+  border-radius: 20px;
+  border: 0;
   position: absolute;
-  width: 66px;
-  height: 38px;
+  width: 74px;
+  height: 40px;
   right: 4px;
-  top: 8px;
+  top: 6px;
 
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 20px;
   line-height: 37px;
   /* identical to box height */
 
 
-  color: #000000;
+  color: #5a41ea;
 
 
   /* Inside auto layout */
@@ -81,16 +86,32 @@ h2 {
   margin: 0px 10px;
 }
 
-#center{
-  text-align: center;
+#signupSmall {
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: #5a41ea;
+
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  right: 104px;
+  top: 6px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 35px;
+  color: white;
 }
+
 
 p {
   position: absolute;
   /*width: 978px;   This line prevents it from centering and idk why*/
   height: 150px;
   text-align: center;
-  top: 160px;
+  top: 130px;
   
 
   font-family: Poppins;
@@ -101,4 +122,33 @@ p {
   
   color: #000000;
 
+}
+
+#signupBig {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px 30px;
+  position: absolute;
+  /*width: 328px;*/
+  height: px;
+  text-align: center;
+  display: flex;
+  top: 410px;
+  left:50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  background: #5a41ea;
+  border-radius: 60px;
+  border: 0;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 82px;
+/* identical to box height */
+
+
+color: #FFFFFF;
 }
