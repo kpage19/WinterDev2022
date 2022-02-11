@@ -1,8 +1,10 @@
 import '../src/App.css';
 
+
 function App() {
-  
+
   return (
+
 
     <div className="App">
       <iframe id="topbar"></iframe>
@@ -11,8 +13,11 @@ function App() {
       <button id="signupSmall">Sign up</button>
       <p id="center">We need some kind of tagline here like
           Where students can find study buddies</p>
-      <button id="signupBig">Sign up</button>
+
+      {/*<button id="signupBig">Sign up</button> */}
     </div>
+
+
   );
 }
 
