@@ -1,5 +1,5 @@
-//import '../src/App.css';
-import '../src/Profilepage.css';
+import '../src/App.css';
+//import '../src/Profilepage.css';
 import SignedOut from './SignedOut';
 import Profilepage from './Profilepage';
 import Login from './Login';
