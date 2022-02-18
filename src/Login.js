@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import './App.css';
-
+import Profilepage from './Profilepage';
+import App from './App';
 
 
 export default function Login() {
@@ -10,9 +11,9 @@ export default function Login() {
     const [showLoginButton, setShowLoginButton] = useState(true);
     const [ showLogoutButton, setShowLogoutButton] = useState(false);
     const onLoginSuccess = (res) => {
-    console.log('Login Success',res.profileObj);
-    setShowLoginButton(false);
-    setShowLogoutButton(true);
+      console.log('Login Success',res.profileObj);
+      setShowLoginButton(false);
+      setShowLogoutButton(true);
     }
 
     const onFailureSuccess=(res) => {
@@ -43,14 +44,18 @@ export default function Login() {
             cookiePolicy={'single_host_origin'}
         /> :null
         }
-
+      
         {showLogoutButton ?
         <GoogleLogout
                 clientId={clientId}
+                render={renderProps => (
+                  <button id="logout" onClick={renderProps.onClick} disabled={renderProps.disabled}>Logout</button>
+                  )}
                 buttonText="Logout"
                 onLogoutSuccess={onSignoutSuccess}
-            >
-        </GoogleLogout> : null
+                
+            onFailure={onFailureSuccess}
+        /> :null
         }
 
 

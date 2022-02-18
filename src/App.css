@@ -17,6 +17,7 @@ table {
 /* Page wide stuff */
 body {
   background-color: white;
+  
 }
 
 /* Purple bar at the top w/ name/sign up/login */
@@ -73,6 +74,33 @@ body {
   color: #5a41ea;
 }
 
+/* Logout button features */
+#logout {
+  /* color, textbox size */
+  background-color: white;
+  border-radius: 20px;
+  border: 0;
+  width: 90px;
+  height: 40px;
+
+  /* position */
+  position: absolute;
+  right: 4px;
+  top: 6px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+
+  /* Font, Font size, color */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 37px;
+  color: #5a41ea;
+}
+
 /* sign up button in top corner features */
 #signupSmall {
   /* Color, position, size */
@@ -101,7 +129,7 @@ body {
   /*width: 978px;   This line prevents it from centering and idk why*/
   height: 150px;
   text-align: center;
-  top: 130px;
+  top: 80px;
   
   /* Font, font size, color */
   font-family: Poppins;
@@ -124,7 +152,7 @@ body {
   height: px;
   text-align: center;
   display: flex;
-  top: 410px;
+  top: 380px;
   left:50%;
   transform: translate(-50%, -50%);
   background: #5a41ea;
@@ -140,5 +168,45 @@ body {
   color: #FFFFFF;
 }
 
+#noticebox {
+  position: absolute;
+  width: 100%;
+  height: 278px;
+  left: 0px;
+  top: 540px;
 
+  background: #D0D4FC;
+  border: 0;
+}
 
+#notice {
+  position: absolute;
+  height: 45px;
+  text-align: center;
+  top: 540px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+
+  color: #000000;
+}
+
+#disclaimer {
+  position: absolute;
+  height: 222px;
+  left: 8px;
+  text-align:left;
+  top: 550px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+
+}
