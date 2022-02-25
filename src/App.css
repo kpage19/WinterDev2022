@@ -171,7 +171,8 @@ body {
   position: relative;
   height: 45px;
   text-align: center;
-  top: 540px;
+  /* top was 540 */
+  top: 510px;
   margin-top: -32px;
   margin-bottom: 600px;
   margin-right: 100px;
@@ -191,7 +192,8 @@ body {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  top: 640px;
+  /* top was 640 */
+  top: 610px;
   display: table-cell;
 
   margin-left: 23%;
@@ -200,15 +202,19 @@ body {
 
 #noticebox {
   position: absolute;
-  width: 900px;
+  /*width: 900px;*/
+  width: 60%;
   height: 200px;
-  top: 560px;
+  /* top was 560px */
+  top: 530px;
   left: 20%;
   border-radius: 1rem;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
+  
 
+  border: 0;
   background: #d0d4fc;
   border-top-width: 50px;
   border-top-color: #5a41ea;
