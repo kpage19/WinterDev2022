@@ -10,7 +10,7 @@ const SignedOut = () => {
           <button id="signupSmall">Sign up</button>
           <p id="center">We need some kind of tagline here like
               Where students can find study buddies</p>
-            
+           
           {/*<button id="signupBig">Sign up</button> */}
           <br /> 
       
