@@ -1,5 +1,6 @@
 import '../src/Profilepage.css';
-import App from "./App";
+import Homepage from "./Homepage";
+import React from 'react';
 
 function Profilepage() {
 

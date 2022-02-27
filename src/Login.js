@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
-import './App.css';
+import './Homepage.css';
 import Profilepage from './Profilepage';
-import App from './App';
+import Homepage from './Homepage';
 
 
 export default function Login() {
