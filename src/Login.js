@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
-import './Homepage.css';
+import './App.css';
 import Profilepage from './Profilepage';
-import Homepage from './Homepage';
+import App from './App';
+
 
 
 export default function Login() {
@@ -26,8 +27,6 @@ export default function Login() {
     setShowLogoutButton(false);
     console.clear();
     }
-
-
 
   return (
     <div className='signupBig'>

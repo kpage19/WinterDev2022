@@ -5,7 +5,7 @@ import './index.css';
 import Login from './Login';
 import reportWebVitals from './reportWebVitals';
 import Profilepage from './Profilepage';
-import Homepage from './Homepage';
+import App from './App';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 
@@ -16,7 +16,7 @@ const Routing = () =>{
       <Switch>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/profile" component={Profilepage}/>
-        <Route exact path="/homepage" component={Homepage}/>
+        <Route exact path="/homepage" component={App}/>
       </Switch>
     </Router>
   )
@@ -25,9 +25,8 @@ const Routing = () =>{
 ReactDOM.render(
   <React.StrictMode>
     <Routing/>
-    <Homepage/>
+    <App/>
     <Login/>
-    
   </React.StrictMode>,
   document.getElementById('root')
 );
