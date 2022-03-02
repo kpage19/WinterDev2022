@@ -1,23 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
 import Login from './Login';
-//import Profilepage from './Profilepage';
-/*import logincss from './logincss.css';*/
 import reportWebVitals from './reportWebVitals';
+import Profilepage from './Profilepage';
+import App from './App';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+
+
+
+const Routing = () =>{
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/login" component={Login}/>
+        <Route exact path="/profile" component={Profilepage}/>
+        <Route exact path="/homepage" component={App}/>
+      </Switch>
+    </Router>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>
-      <App /> 
-      <Login/>
-    </div>
-
-    
+    <Routing/>
+    <App/>
+    <Login/>
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

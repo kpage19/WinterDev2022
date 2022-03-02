@@ -1,6 +1,10 @@
 # Please run this command on your local terminal
 npm install react-google-login
 
+These commands resolve  “switch is not exported from react-router-dom” error
+npm uninstall react-router-dom
+npm install react-router-dom@5.2.0
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
