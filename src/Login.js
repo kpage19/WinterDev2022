@@ -4,9 +4,8 @@ import './App.css';
 import Profilepage from './Profilepage';
 import App from './App';
 
-
-
 export default function Login() {
+  
 
     const clientId = "754018186930-p4a5rumvi4su0bdsv6old3rsb5pb6g3v.apps.googleusercontent.com";
     const [showLoginButton, setShowLoginButton] = useState(true);
@@ -29,6 +28,7 @@ export default function Login() {
     }
 
   return (
+
     <div className='signupBig'>
 
         {showLoginButton ?

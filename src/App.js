@@ -3,7 +3,7 @@ import '../src/App.css';
 import SignedOut from './SignedOut';
 import Profilepage from './Profilepage';
 import Login from './Login';
-
+import { Link } from "react-router-dom";
 
 function App(){
     return(
@@ -22,7 +22,16 @@ function App(){
         When working with your study buddy, please be mindful of Academic Integrity 
         rules specified by the univsersity.</p>
    
+        {/*<li>
+          <Link to="/">App</Link>
+        </li>
+        <li>
+          <Link to="/profile">Profilepage</Link>
+        </li>*/}
+    
     </div>
-    )
+
+    
+    );
 }
 export default App;

@@ -1,0 +1,73 @@
+.body {
+    background: #abacfd;
+    position: relative;
+}
+.Profilepreview.first {
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    top: 120px;
+    left: 21%;
+
+    background: #abacfd;
+    border-radius: 40px;
+    
+}
+
+.Profilepreview.second {
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    top: 120px;
+    left: 47%;
+
+    background: #abacfd;
+    border-radius: 40px;
+    
+}
+
+.Profilepreview.third {
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    top: 120px;
+    left: 73%;
+
+    background: #abacfd;
+    border-radius: 40px;
+    
+}
+
+.Profilepreview h3 {
+    position: absolute;
+    /*width: 11%;*/
+    height: 76px;
+    left: 40%;
+    right: 5px;
+    top: -5px;
+
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 30px;
+
+    color: black;
+}
+
+.Profilepreview h4 {
+    position: absolute;
+    width: 90%;
+    height: 60px;
+    left: 5%;
+    top: 100px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+
+    color: #000000;
+}
