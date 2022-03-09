@@ -6,7 +6,7 @@ import Login from './Login';
 import reportWebVitals from './reportWebVitals';
 import Profilepage from './Profilepage';
 import App from './App';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
 
 
 
@@ -16,7 +16,8 @@ const Routing = () =>{
       <Switch>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/profile" component={Profilepage}/>
-        <Route exact path="/homepage" component={App}/>
+        {/*<Route exact path="/homepage" component={App}/>*/}
+        {/*<Redirect from="/homepage" to="/profile" />*/}
       </Switch>
     </Router>
   )
