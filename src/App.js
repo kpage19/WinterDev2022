@@ -1,35 +1,45 @@
-import '../src/App.css';
-//import '../src/Profilepage.css';
-import SignedOut from './SignedOut';
-import Profilepage from './Profilepage';
-import Login from './Login';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { auth } from "./firebase-config"
+import { signOut } from 'firebase/auth';
+import Login from "./pages/Login";
+import Profile from "./pages/Profile";
+import Home from "./pages/Home";
 
 function App() {
+  
+  const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
 
-    return (
-
-    <div className="App">
-      <iframe id="topbar"></iframe>
-      <h1 id="StudyBuddies">Study Buddies</h1>
-      <button id="login">Login</button>
-      <button id="signupSmall">Sign up</button>
-      <p id="center">We need some kind of tagline here like
-          Where students can find study buddies</p>
-      <iframe id="noticebox"></iframe>
-      <h2 id="notice">NOTICE</h2>
-      <p id="disclaimer">On this site, your school email address is PUBLICLY AVAILABLE 
-      to other users. By signing up, you agree to have your school email address 
-      displayed on your profile.<br></br>
-      When working with your study buddy, please be mindful of Academic Integrity 
-      rules specified by the univsersity.</p>
- 
-  </div>
+  const signUserOut = () => {
+    signOut(auth).then(() => {
+      localStorage.clear();
+      setIsAuth(false);
+      window.location.pathname = "/";
+    });
+  };
+  
+  return (
+    <Router>
+      <nav>
+        {!isAuth ? (
+          <div></div>
+        ) : (
+          <>
+            <Link to="/home"> Home </Link>
+            <Link to="/profile"> My Profile </Link>
+            <button onClick={signUserOut}> Log Out </button>
+          </>
+        )}
+      </nav>
+      
+      <Routes>
+        <Route path="/" element={<Login setIsAuth={setIsAuth}/>} />
+        <Route path="/profile" element={<Profile isAuth={isAuth}/>} />
+        <Route path="/home" element={<Home isAuth={isAuth}/>} />
+      </Routes>
+    </Router>
   );
-
-
-
-
 }
 
 export default App;
-
